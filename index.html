@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculateur de sous-réseaux</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Calculateur de sous-réseaux</h1>
+    <div>
+      <label for="network-address">Adresse réseau :</label>
+      <input type="text" id="network-address" placeholder="Entrer l'adresse réseau...">
+    </div>
+    <div>
+      <label for="subnet-mask">Masque de sous-réseau :</label>
+      <input type="text" id="subnet-mask" placeholder="Entrer le masque de sous-réseau...">
+    </div>
+    <div>
+      <label for="num-subnets">Nombre de sous-réseaux :</label>
+      <input type="number" id="num-subnets" min="1" placeholder="Entrer le nombre de sous-réseaux...">
+    </div>
+    <div id="hosts-input"></div>
+    <button onclick="addHostsInput()">Ajouter des hôtes</button>
+    <button onclick="calculateSubnets()">Calculer</button>
+    <div id="results"></div>
+    <div class="footer">
+      <span>Développé par Chaimaa Said</span>
+      <span>Encadré par Prof Rachid Dakir</span>
+    </div>
+    <script src="script.js"></script>
+  </div>
+</body>
+</html>
